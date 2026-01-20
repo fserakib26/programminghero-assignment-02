@@ -183,7 +183,7 @@ body{
 /* why_chose_section */
 .why_chose_section{
     padding: 120px 200px;
-    background-color: #1B0B2F;
+    background-color: #230E3D;
     color: #FFFFFF;
 }
 
@@ -230,4 +230,99 @@ body{
 }
 .card4{
     grid-column: span 2;
+}
+
+/* featured_episodes_section */
+.featured_episodes_section{
+    background-color: #1B0B2F;
+    padding: 50px 200px 120px 200px;
+    
+}
+
+.featured_episodes_section h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+}
+.eposodes{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 120px;    
+}
+
+.ep_cards{
+    background-color: #2A0F4D;
+    border-radius: 15px;
+    /* width: 380px; */
+    
+}
+.ep_cards_video iframe{
+    border-radius: 15px 15px 0 0; 
+}
+.ep_contenet{
+    padding: 24px;
+
+}
+
+.ep_contenet h3{
+    font-size: 1.5rem;
+    padding-bottom: 12px;
+    color: #FFFFFF;
+
+}
+.ep_contenet p{
+    font-size: 1rem;
+    color: #FFFFFF;
+    padding-bottom: 12px;
+
+}
+
+.ep_contenet span{
+    font-size: 1rem;
+    color: #00FF88;
+    
+    
+}
+.ep_contenet span img{
+    padding-right: 6px;    
+    
+}
+
+/* Meet The Host Section */
+.meet_the_host{
+    display: flex;
+    border-radius: 40px;
+    background-color: #2A0F4D;
+    padding: 40px;
+    gap: 24px;
+}
+
+.host_content h3{
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.host_content p{
+    font-size: 1rem;
+    color: #FFFFFF;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.social_icons{
+    display: flex;
+    gap: 8px;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #533C72;
+    border-radius: 50px;
+    /* background-color: #00FF88; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

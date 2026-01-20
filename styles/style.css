@@ -17,7 +17,7 @@ body{
 /* Header Top Section */
 
  .header_top{
-    background-color: #412567;
+    background-color: #1B0B2F;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,8 +27,16 @@ body{
 
  .logo h2{
     color: #FFFFFF;
+    font-size: 2.5rem;
  }
-
+ .logo span{
+    background: linear-gradient(50deg, #F7E93F,#FB09B4, #9100F8 );
+    /* Learned from chat gpt */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+ }
+ 
  .header_top ul{
     list-style: none;
     display: flex;
@@ -59,5 +67,66 @@ body{
     height: 760px;
     background-image: url("../assets/hero-bg.png");
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
+    
+}
+
+.hero_img{
+    height: 350px;
+    width: 350px;
+    background-image: url("../assets/hero-circle.png");
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_content{
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 40px; */
+}
+.hero_content h2{
+    margin-top: 40px;
+    font-size: 3.75rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+.hero_content p{
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.hero_btn{
+    padding-top: 24px;
+}
+
+.hero_btn1{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 50px;
+    color: #FFFFFF;
+    background: linear-gradient(50deg, #F7E93F,#FB09B4, #9100F8 );
+    border: none;
+}
+
+.hero_btn2{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 50px;
+    color: #00FF88;
+    border: 2px solid #00FF88;
+    background-color: unset;
+}
+
+.hero_btn1 i, .hero_btn2 i{
+    margin-right: 8px;
 }

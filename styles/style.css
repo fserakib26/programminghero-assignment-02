@@ -56,6 +56,24 @@
     color: #FFFFFF;
     background: linear-gradient(50deg, #F7E93F,#FB09B4, #9100F8 );
     border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn1::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+
+}
+
+.btn1:hover::after{
+    transform: scaleX(1);
 }
 
 #menu_toggle{
@@ -78,6 +96,7 @@
     background-image: url("../assets/hero-bg.png");
     background-position: center;
     background-size: cover;
+    /* position: absolute; */
     
 }
 
@@ -102,7 +121,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;    
+    flex-direction: column;
+    /* position: relative;     */
 }
 
 #hero_img{
@@ -142,8 +162,24 @@
     color: #FFFFFF;
     background: linear-gradient(50deg, #F7E93F,#FB09B4, #9100F8 );
     border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.hero_btn1::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+
 }
 
+.hero_btn1:hover::after{
+    transform: scaleX(1);
+}
 .hero_btn2{
     font-size: 1rem;
     font-weight: 600;
@@ -152,6 +188,8 @@
     color: #00FF88;
     border: 2px solid #00FF88;
     background-color: unset;
+    cursor: pointer;
+    
 }
 
 .hero_btn1 i, .hero_btn2 i{
@@ -408,6 +446,12 @@
 
 /* Desktop Laptop based End */
 
+
+
+
+
+
+
 /* Responsive Design */
 @media screen and (max-width:576px) {
     /* Header Responsive */
@@ -539,11 +583,135 @@
     .footer_logo h2{
         font-size: 1.5rem;
     }
-    #footer_menu{
+
+    .footer_section ul{
+        flex-wrap: wrap;
+    }
+    /* #footer_menu{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         justify-content: center;
         align-items: center;
+    } */
+}
+
+/* Medium Device Responsive */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    /* Header Responsive */
+    
+    .header_top{
+        padding: 24px 20px;
+       
     }
+    .nav_menu li a{    
+        font-size: 1.3rem;
+    }
+    .btn1{
+        font-size: 1.3rem;
+    }
+    
+    .hero_content h2{
+        font-size: 3rem;
+    }
+    .hero_content p{
+        font-size: 1.5rem;
+    }
+    .hero_img{
+        height: 350px;
+        width: 350px;
+    }
+    .hero_btn button{
+        font-size: 1.3rem;
+    }
+
+    #new{
+        margin-left: 180px;
+               
+    }
+
+    .hero_content p{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+/* about section */
+    .about_section{
+        padding: 40px 20px;
+    }
+    .about_content{
+        padding-bottom: 40px;
+    }
+
+    .about_content h2{
+        font-size: 2.5rem;
+    }
+
+    .about_content p{
+        font-size: 1.3rem;
+    }
+
+    .statistics_items{
+        padding-top: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;    
+    }
+/* why chose section */
+    .why_chose_section{
+        padding: 40px 20px;
+    }
+
+    .why_chose_section h1{
+        font-size: 2.5rem;
+        padding-bottom: 16px;
+    }
+
+    .grid_cards{        
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr) ;
+        gap: 16px;
+    }
+
+    .card1, .card2, .card3, .card4, .card5 {
+        border-radius: 24px;
+        padding: 24px;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .card5{
+        grid-column: span 2;
+    }
+/* Feature */
+    .featured_episodes_section{
+        padding: 40px 20px;
+        
+    }
+    
+    .featured_episodes_section h2{
+        font-size: 2rem;
+        padding-bottom: 24px;
+    }
+    .episodes{
+        gap: 16px;
+        padding-bottom: 60px; 
+    }
+
+    /* Footer Section */
+    .footer_section{
+        height: 300px;
+    }
+
+    .footer_logo h2{
+        font-size: 1.5rem;
+    }
+    
+    #footer_menu{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:993px) {
+    
 }

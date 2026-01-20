@@ -131,3 +131,51 @@ body{
 .hero_btn1 i, .hero_btn2 i{
     margin-right: 8px;
 }
+
+/* About Section  */
+.about_section{
+    background-color: #1B0B2F;
+    padding: 50px 200px 120px 200px;
+}
+.about_content{
+    text-align: center;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #412567;
+}
+
+.about_content h2{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.about_content p{
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+.statistics_items{
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+     
+}
+
+.items{
+    text-align: center;
+}
+.items h1{
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+.items p{
+    color: #FFFFFF;
+    font-size: 1rem;
+    
+}

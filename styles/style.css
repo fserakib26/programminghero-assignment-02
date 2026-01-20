@@ -71,7 +71,21 @@ body{
     background-size: cover;
     
 }
-
+.new_btn{
+    position: absolute;
+    left: 865px;
+    top: 140px;
+}
+#new{
+    background-color: #00FF88;
+    padding: 8px 16px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+       
+}
 .hero_img{
     height: 350px;
     width: 350px;
@@ -90,6 +104,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
     /* gap: 40px; */
 }
 .hero_content h2{

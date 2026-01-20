@@ -22,6 +22,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 24px 200px;
+    border-bottom: 1px solid #412567;
     
  }
 

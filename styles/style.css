@@ -179,3 +179,55 @@ body{
     font-size: 1rem;
     
 }
+
+/* why_chose_section */
+.why_chose_section{
+    padding: 120px 200px;
+    background-color: #1B0B2F;
+    color: #FFFFFF;
+}
+
+.why_chose_section h1{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.grid_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr) ;
+    gap: 20px;
+}
+
+.card1, .card2, .card3, .card4, .card5 {
+    background-color: #2A0F4D;
+    border-radius: 40px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   
+    
+}
+
+.card1 h2, .card2 h2, .card3 h2, .card4 h2, .card5 h2 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.card1{
+    grid-row: span 2;
+}
+
+.card2{
+    grid-column: span 2;
+}
+.card3{
+    grid-column: span 2;
+}
+.card4{
+    grid-column: span 2;
+}
